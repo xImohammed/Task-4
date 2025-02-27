@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Login System</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+    <div class="w-50 mx-auto  border my-1 px-5 rounded-5 border-1 border-light">
+<div class="inner">
+        <h1 class=" my-5">Enter your registration credentials</h1>
+        <form id="form" action="
+        ">
+        <div class="form-floating mb-5">
+            <input type="text" class="form-control" id="userName" >
+            <label for="userName">Name</label>
+          </div>
+        <div class="form-floating mb-5">
+            <input type="email" class="form-control" id="userEmail" >
+            <label for="userEmail">Email address</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="userPass">
+            <label for="userPass">Password</label>
+          </div>
+
+          <div>
+            <button id="signUp" type="button" class="btn btn-outline-primary my-5">Sign up</button>
+            <div class="inner d-flex align-items-center my-5">
+                <span class="display-6">All ready have an account?</span><button id="login" type="button" class=" ms-4 btn btn-outline-success">login</button>
+            </div>
+
+          </div>
+       
+          <div id="successALert" class="alert d-none alert-success" role="alert">
+            Registration successful ! You can now log in.
+          </div>
+          <div id="dangerAlert" class="alert d-none  alert-danger" role="alert">
+          This email is already registered. Please choose different one. 
+          </div>
+    </form>
+</div>
+    </div>
+    <script src="./js/regiter.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

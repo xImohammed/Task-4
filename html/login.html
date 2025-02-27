@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Login System</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="w-50 mx-auto border my-4 px-5 rounded-4  border-1 border-light">
+        <h1 class=" my-5">Enter your registration credentials</h1>
+        <form action="
+        ">
+        <div class="form-floating mb-5">
+            <input type="email" class="form-control" id="userEmail" >
+            <label for="userEmail">Email address</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="userPass">
+            <label for="userPassword">Password</label>
+          </div>
+
+          <div>
+            <button id="login" type="button" class=" mt-5 btn btn-outline-success">login</button>
+            
+            <div class="inner my-5 d-flex align-items-center">
+                <span class="display-6">Don't have an account?</span>
+                <button id="signUp" type="button" class="btn  ms-4 btn-outline-primary my-5">Register Now</button>
+            </div>
+
+          </div>
+    </form>
+    <div id="successALert" class="alert d-none alert-success" role="alert">
+        login successful ! Redirecting
+      </div>
+      <div id="dangerAlert" class="alert d-none alert-danger" role="alert">
+      Invalid email or password. Please try again. 
+      </div>
+
+    </div>
+
+
+
+
+
+
+    <script src="../js/login.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
